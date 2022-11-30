@@ -21,6 +21,42 @@ window.onload=function(){
     const iconBurger=document.getElementById("icon-hamburger");
     const backBurger=document.getElementById("back-menu-hamburger");
     const loginBtn=document.querySelectorAll(".login-button");
+    const homeBtn=document.querySelectorAll(".home-btn");
+    const aboutBtn=document.querySelectorAll(".about-btn");
+    const productBtn=document.querySelectorAll(".product-btn");
+    const faqBtn=document.querySelectorAll(".faq-btn");
+    faqBtn.forEach((e,index)=>{
+        const faq=document.querySelector(".faq");
+        e.addEventListener("click",function(){
+            document.body.scrollTop=faq.offsetTop;
+            const menuBurger=document.getElementById("menu-hamburger");
+            menuBurger.style.left="100%";
+        });
+    });
+    productBtn.forEach((e,index)=>{
+        const product=document.querySelector(".product");
+        e.addEventListener("click",function(){
+            document.body.scrollTop=product.offsetTop;
+            const menuBurger=document.getElementById("menu-hamburger");
+            menuBurger.style.left="100%";
+        });
+    });
+    aboutBtn.forEach((e,index)=>{
+        const about=document.querySelector(".about");
+        e.addEventListener("click",function(){
+            document.body.scrollTop=about.offsetTop;
+            const menuBurger=document.getElementById("menu-hamburger");
+            menuBurger.style.left="100%";
+        });
+    });
+    homeBtn.forEach((e,index)=>{
+        const home=document.querySelector(".header");
+        e.addEventListener("click",function(){
+            document.body.scrollTop=home.offsetTop
+            const menuBurger=document.getElementById("menu-hamburger");
+            menuBurger.style.left="100%";
+        });
+    });
     loginBtn.forEach((e,index)=>{
         e.addEventListener("click",function(){
             window.location.href="login.html";
