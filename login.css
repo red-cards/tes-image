@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'archivo';
+    src: url(Archivo.ttf);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    display: none;
+}
+.login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#form-login-container{
+    padding: 58px 78px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    flex-grow: 1;
+
+}
+.form-login{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.title-login{
+    font-family: 'archivo';
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.subtitle-login{
+    font-family: 'poppins';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.inputan{
+    border-radius: 12px;
+    padding:6px 20px;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+.text-login{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.checkbox-login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+}
+.form-login button{
+    margin-top: 5px;
+    padding :10px 24px;
+    background: #3AAD6A;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+.checkbox-login-container input{
+    height: 20px;
+    width: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    justify-self: center;
+}
+.checkbox-login-container span{
+    font-family: 'poppins';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #828282;
+}
+.logo-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 100px;
+}
+@media only screen and (min-width: 768px) {
+    .hero{
+        width: 60%;
+        padding: 65px 68px;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.5), 
+            rgba(0, 0, 0, 0.5)
+          ),url(colorful-car-toys.jpg);
+        background-size: cover;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .logo{
+        font-family: 'poppins';
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    .hero .title{
+        flex-grow: 1;
+        font-family: 'archivo';
+        font-size: 72px;
+        font-weight: 800;
+        line-height: 94px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}    
