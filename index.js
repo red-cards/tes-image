@@ -20,6 +20,12 @@ window.onload=function(){
     const accordionBtn=document.querySelectorAll(".arrow");
     const iconBurger=document.getElementById("icon-hamburger");
     const backBurger=document.getElementById("back-menu-hamburger");
+    const loginBtn=document.querySelectorAll(".login-button");
+    loginBtn.forEach((e,index)=>{
+        e.addEventListener("click",function(){
+            window.location.href="login.html";
+        });
+    });
     iconBurger.addEventListener("click",function(){
         const menuBurger=document.getElementById("menu-hamburger");
         menuBurger.style.left='0';
